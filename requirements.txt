@@ -11,10 +11,10 @@ defusedxml
 Django
 django-cors-headers
 django-filter
-django-phonenumber-field
 django-templated-mail
 djangorestframework
 djangorestframework-simplejwt
+django-phonenumber-field==6.0.0
 djoser
 drf-nested-routers
 drf-yasg
@@ -28,7 +28,7 @@ mypy-extensions
 oauthlib
 packaging
 pathspec
-phonenumbers
+phonenumbers==8.12.41
 Pillow
 platformdirs
 psycopg2
@@ -49,3 +49,4 @@ sqlparse
 tomli
 uritemplate
 urllib3
+drf-spectacular

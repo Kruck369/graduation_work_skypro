@@ -33,10 +33,10 @@ function UserProfile(props) {
     if (user) {
       setIsLoading(true);
       Promise.all([getUsersAds(page), getUserInfo()])
-        .then(([usersAds, userInormation]) => {
+        .then(([usersAds, userInformation]) => {
           setUserAds(usersAds.data.results);
           setPageQty(Math.round(usersAds.data.count / 4));
-          setUserInfo(userInormation.data);
+          setUserInfo(userInformation.data);
         })
         .catch((error) => console.log("error", error))
         .finally(() => setTimeout(() => setIsLoading(false), 700));
